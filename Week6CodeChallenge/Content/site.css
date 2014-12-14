@@ -1,0 +1,62 @@
+﻿/**
+{
+    border:1px solid black;
+}*/
+
+.customInlineBlock {
+    display:inline-block;
+}
+
+
+#navigate {
+    position:absolute;
+    right:0;
+    top:156px;
+}
+
+#container{
+    margin-top:10px;
+ 
+}
+
+.fullWidth{
+    width:100%;
+}
+
+footer
+{
+    width:100%;
+    margin-top:30px;
+    height:50px;
+}
+
+footer p
+{
+    display:inline-block;
+    margin-top: 20px; 
+}
+
+#footerNav
+{
+    position:relative;
+    float:right;
+    text-align:right;
+}
+
+.thirdWidth
+{
+    width:31%;
+    border: 1px solid #0094ff;
+    margin: 10px 1% 0 1%;
+    font-size:20px;
+}
+
+.worksamples p
+{
+    text-align:center;
+}
+
+.worksamples img
+{
+    width: 30%;
+}

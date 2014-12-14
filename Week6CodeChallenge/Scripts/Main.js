@@ -3,11 +3,11 @@ $(document).ready(function () {
 
     $('body').on('click', '.ajax-link', function () {
         var btnClicked = $(this); //If 'this' is used inside the GET block, it no longer refers to the button.
-        var btnID = $(this).attr('id')
+        var btnID = $(this).attr('id') //Bottom navbar click should highligh proper top tab.
 
         $.get($(this).data('url'), function (data) {
             if (btnClicked.hasClass('submenu')) {
-                $('#subContainer').html(data);
+                $('#subContainer').html(data); 
 
                 $('#container').find('.ajax-link').removeClass('active'); //Remove Active class off of all buttons in Container
                 btnClicked.addClass('active'); //Add it to the clicked button.

@@ -49,10 +49,11 @@ footer p
 
 .thirdWidth
 {
-    width:31%;
-    border: 1px solid #0094ff;
-    margin: 10px 1% 0 1%;
+    width:28%;
+    border: 1px solid #0064Df;
+    margin: 10px 2% 0 2%;
     font-size:20px;
+    padding:5px;
 }
 
 .worksamples
@@ -70,4 +71,15 @@ footer p
 .worksamples img
 {
     width: 100%;
+}
+
+#footerNav span
+{
+    cursor:pointer;
+    color:#0064Df;
+}
+
+#footerNav span:hover
+{
+    color:#000;
 }

@@ -16,3 +16,7 @@ C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\bin\System.
 C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\obj\Debug\Week6CodeChallenge.csprojResolveAssemblyReference.cache
 C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\obj\Debug\Week6CodeChallenge.dll
 C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\obj\Debug\Week6CodeChallenge.pdb
+C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\bin\EntityFramework.dll
+C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\bin\EntityFramework.SqlServer.dll
+C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\bin\EntityFramework.xml
+C:\Users\Reid\Documents\GitHub\Week6CodeChallenge\Week6CodeChallenge\bin\EntityFramework.SqlServer.xml

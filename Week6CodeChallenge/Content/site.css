@@ -3,6 +3,10 @@
     border:1px solid black;
 }*/
 
+body{
+    overflow:scroll;
+}
+
 .customInlineBlock {
     display:inline-block;
 }
@@ -53,8 +57,8 @@ footer p
 
 .worksamples
 {
-    width:31%;
-    margin: 10px 1% 0 1%;
+    width:37%;
+    margin: 15px 5% 15px 5%;
     font-size:20px;
 }
 
@@ -63,7 +67,7 @@ footer p
     text-align:center;
 }
 
-/*.worksamples img
+.worksamples img
 {
-    width: 35%;
-}*/
+    width: 100%;
+}

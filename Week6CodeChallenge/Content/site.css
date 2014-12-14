@@ -51,12 +51,19 @@ footer p
     font-size:20px;
 }
 
+.worksamples
+{
+    width:31%;
+    margin: 10px 1% 0 1%;
+    font-size:20px;
+}
+
 .worksamples p
 {
     text-align:center;
 }
 
-.worksamples img
+/*.worksamples img
 {
-    width: 30%;
-}
+    width: 35%;
+}*/

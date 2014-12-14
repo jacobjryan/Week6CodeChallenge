@@ -27,9 +27,21 @@ namespace Week6CodeChallenge.Controllers
             return PartialView();
         }
 
+        [HttpGet]
         public ActionResult Contact()
         {
             return PartialView();
+        }
+
+        [HttpPost]
+        public ActionResult Contact(Models.Week6Contacts contact)
+        {
+            Models.sp5ReidEntities1 db = new Models.sp5ReidEntities1();
+
+            db.Week6Contacts.Add(contact);
+            db.SaveChanges();
+
+            return Content("Thank you for contacting us!");
         }
 
         public ActionResult Work()

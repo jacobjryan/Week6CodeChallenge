@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="ContactFormModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="sp5ReidModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="Week6Contacts">
           <Key>
             <PropertyRef Name="ContactID" />
@@ -16,15 +16,16 @@
           <Property Name="CompanyName" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="ProjectDescription" Type="nvarchar" MaxLength="200" Nullable="false" />
           <Property Name="Comment" Type="nvarchar" MaxLength="500" Nullable="false" />
+          <Property Name="PhoneNumber" Type="nchar" MaxLength="50" />
         </EntityType>
-        <EntityContainer Name="ContactFormModelStoreContainer">
+        <EntityContainer Name="sp5ReidModelStoreContainer">
           <EntitySet Name="Week6Contacts" EntityType="Self.Week6Contacts" Schema="sp5Reid" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="ContactFormModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="sp5ReidModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="Week6Contacts">
           <Key>
             <PropertyRef Name="ContactID" />
@@ -36,8 +37,9 @@
           <Property Name="CompanyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="ProjectDescription" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="Comment" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="true" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="sp5ReidEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="sp5ReidEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Week6Contacts" EntityType="Self.Week6Contacts" />
         </EntityContainer>
       </Schema>
@@ -45,9 +47,9 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ContactFormModelStoreContainer" CdmEntityContainer="sp5ReidEntities">
+        <EntityContainerMapping StorageEntityContainer="sp5ReidModelStoreContainer" CdmEntityContainer="sp5ReidEntities1">
           <EntitySetMapping Name="Week6Contacts">
-            <EntityTypeMapping TypeName="ContactFormModel.Week6Contacts">
+            <EntityTypeMapping TypeName="sp5ReidModel.Week6Contacts">
               <MappingFragment StoreEntitySet="Week6Contacts">
                 <ScalarProperty Name="ContactID" ColumnName="ContactID" />
                 <ScalarProperty Name="FirstName" ColumnName="FirstName" />
@@ -56,6 +58,7 @@
                 <ScalarProperty Name="CompanyName" ColumnName="CompanyName" />
                 <ScalarProperty Name="ProjectDescription" ColumnName="ProjectDescription" />
                 <ScalarProperty Name="Comment" ColumnName="Comment" />
+                <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

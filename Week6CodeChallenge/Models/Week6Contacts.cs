@@ -21,5 +21,6 @@ namespace Week6CodeChallenge.Models
         public string CompanyName { get; set; }
         public string ProjectDescription { get; set; }
         public string Comment { get; set; }
+        public string PhoneNumber { get; set; }
     }
 }

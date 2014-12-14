@@ -12,11 +12,23 @@ $(document).ready(function () {
                 btnClicked.addClass('active'); //Add it to the clicked button.
             }
             else {
-                $('#container').html(data)
+                $('#container').html(data);
                 $('header').find('.ajax-link').removeClass('active'); //Remove Active class off of all buttons in the header
                 btnClicked.addClass('active'); //Add it to the cli  cked button.
 
             }
         });
     });
+
+    $('body').on('submit', '.ajax-form', function (event) {
+
+        //Preventing the default behaviour of a form.
+        event.preventDefault();
+
+        $.post($(this).data('posturl'), $(this).serialize(), function (data) {
+            //Update the content area.
+            $('#container').html(data);
+        });
+    });
+
 });

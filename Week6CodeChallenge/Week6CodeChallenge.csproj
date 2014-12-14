@@ -90,6 +90,8 @@
   <ItemGroup>
     <Content Include="Content\site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\Main.js" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -100,23 +102,24 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactModel.Context.cs">
+    <Compile Include="Models\ContactForm.cs" />
+    <Compile Include="Models\ContactFormModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContactModel.Context.tt</DependentUpon>
+      <DependentUpon>ContactFormModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactModel.cs">
+    <Compile Include="Models\ContactFormModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContactModel.tt</DependentUpon>
+      <DependentUpon>ContactFormModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\ContactModel.Designer.cs">
+    <Compile Include="Models\ContactFormModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>ContactModel.edmx</DependentUpon>
+      <DependentUpon>ContactFormModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Models\Week6Contacts.cs">
-      <DependentUpon>ContactModel.tt</DependentUpon>
+      <DependentUpon>ContactFormModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -134,22 +137,22 @@
     <Content Include="Views\AboutSub\How.cshtml" />
     <Content Include="Views\AboutSub\Where.cshtml" />
     <Content Include="Views\AboutSub\Who.cshtml" />
-    <EntityDeploy Include="Models\ContactModel.edmx">
+    <EntityDeploy Include="Models\ContactFormModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>ContactModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>ContactFormModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\ContactModel.Context.tt">
+    <Content Include="Models\ContactFormModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContactModel.edmx</DependentUpon>
-      <LastGenOutput>ContactModel.Context.cs</LastGenOutput>
+      <DependentUpon>ContactFormModel.edmx</DependentUpon>
+      <LastGenOutput>ContactFormModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\ContactModel.edmx.diagram">
-      <DependentUpon>ContactModel.edmx</DependentUpon>
+    <Content Include="Models\ContactFormModel.edmx.diagram">
+      <DependentUpon>ContactFormModel.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\ContactModel.tt">
+    <Content Include="Models\ContactFormModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>ContactModel.edmx</DependentUpon>
-      <LastGenOutput>ContactModel.cs</LastGenOutput>
+      <DependentUpon>ContactFormModel.edmx</DependentUpon>
+      <LastGenOutput>ContactFormModel.cs</LastGenOutput>
     </Content>
     <Content Include="Views\Home\Contact.cshtml" />
     <None Include="Web.Debug.config">

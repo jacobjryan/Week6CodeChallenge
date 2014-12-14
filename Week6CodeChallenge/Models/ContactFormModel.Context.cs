@@ -13,10 +13,10 @@ namespace Week6CodeChallenge.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class sp5ReidEntities : DbContext
+    public partial class sp5ReidEntities1 : DbContext
     {
-        public sp5ReidEntities()
-            : base("name=sp5ReidEntities")
+        public sp5ReidEntities1()
+            : base("name=sp5ReidEntities1")
         {
         }
     
